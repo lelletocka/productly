@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en"></html>
-
 <head>
     <meta charset="UTF-8"> 
     <meta name="veiwport" content="width=device-width, initial-scale=1.0">
     <title>productly</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
-    <header class="header">
+<body class="body">
+    <header class="header container">
         <div class="logo-div header-logo">
-            <img class="logo" src="images/Logo.svg">
+            <img class="logo" src="images/Logo.png">
         </div>
         <ul class="navbar">
             <li>Products</li>
@@ -19,45 +19,126 @@
             <li>Pricing</li>
             <li>Resources</li>
         </ul>
-        <div class="button sign-in-button">
-            <p>Sign in</p>
+        <div class="button white-button sign-in-button">
+            <p class="button-p">Sign in</p>
         </div>
-        <div class="button header-sign-up">
-            <p>Sign up</p>
+        <div class="button orange-button header-sign-up">
+            <p class="button-p">Sign up</p>
         </div>
         <!-- Go back and decide on nav tag and how to organise header nav -->
     </header>
 
-    <main>
-        <article class="article article-1">
-            <div class="text-section"></div>
-            <div class="image-section"></div>
-        </article>
-        <article class="article article-2">
-            <div class="a2-section section-a2-1">
-
+    <main class="container">
+        <article class="article flex article-1">
+            <div class="text-section">
+                <h1 class="headline h1">The Design Thinking superpowers</h1>
+                <p class="a1-p">Tools, tutorials, design and innovation experts, all in one place! The most 
+                    intuitive way to imagine your next user experience.</p>
+                <div class="button orange-button">
+                    <p class="button-p">Get started</p>
+                </div>
+                <div class="link">
+                    <p>Watch the Video</p>
+                </div>
             </div>
-            <div class="a2-section section-a2-2">
-
-            </div>
-            <div class="a2-section section-a2-3">
-
-            </div>
-            <div class="a2-section section-a2-4">
-                
+            <div class="image-section">
+                <img class="image image-1" src="images/image-a1.png">
             </div>
         </article>
-        <article class="article article-3">
-            <div class="text-section"></div>
-            <div class="image-section"></div>
+        <article class="article flex article-2">
+            <div class="h2-a2-div">
+                <h2 class="headline h2 h2-a2">We design tools to unveil your superpowers</h2>
+            </div>
+            <div class="flex a2-section-container">
+                <div class="a2-section section-a2-1">
+                    <img class="a2-section-icon" src="images/icon-1.png">
+                    <h3 class="headline h3">First click tests</h3>
+                    <p>While most people enjoy casino gambling.</p>
+                </div>
+                <div class="a2-section section-a2-2">
+                    <img class="a2-section-icon" src="images/icon-2.png">
+                    <h3 class="headline h3">Design surveys</h3>
+                    <p>Sports betting, lottery and bingo playing for the fun.</p>
+                </div>
+                <div class="a2-section section-a2-3">
+                    <img class="a2-section-icon" src="images/icon-3.png">
+                    <h3 class="headline h3">Preference tests</h3>
+                    <p>The Myspace page defines the individual.</p>
+                </div>
+                <div class="a2-section section-a2-4">
+                    <img class="a2-section-icon" src="images/icon-4.png">
+                    <h3 class="headline h3">Five seconds tests</h3>
+                    <p>Personal choices and the overall personality of the person.</p>
+                </div>
+            </div>
+            <div class="a2-button-section">
+                <div class="button orange-button">
+                    <p class="button-p">SIGN UP NOW</p>
+                </div>
+            </div>
+            
         </article>
-        <article class="article article-4">
-            <div class="text-section"></div>
-            <div class="image-section"></div>
+        <article class="article flex article-3">
+            <div class="text-section">
+                <p class="pre-h2">Effortless Validation for</p>
+                <h2 class="headline h2 h2-a3">Design Professionals</h2>
+                <p>The Myspace page defines the individual, his or her characteristics, traits, 
+                    personal choices and the overall personality of the person. </p>
+                <h4 class="headline h4">Accessory makers</h4>
+                <p>While most people enjoy casino gambling, sports betting, lottery and bingo 
+                    playing for the fun. </p>
+                <h4 class="headline h4">Alterationists</h4>
+                <p>If you are looking for a new way to promote your business that won’t cost 
+                    you more money. </p>
+                <h4 class="headline h4">Custom Design designers</h4>
+                <p>If you are looking for a new way to promote your business that won’t cost you 
+                    more money. </p>
+            </div>
+            <div class="image-section">
+                <img class="image image-a3" src="images/image-a3.png">
+            </div>
         </article>
-        <article class="article article-5">
-            <div class="text-section"></div>
-            <div class="image-section"></div>
+        <article class="article flex article-4">
+            <div class="text-section">
+                <p class="pre-h2">Easier decision making for</p>
+                <h2 class="headline h2 h2-a4">Product Managers</h2>
+                <p>The Myspace page defines the individual, his or her characteristics, traits, 
+                    personal choices and the overall personality of the person. </p>
+                <!-- perhaps change div to ul-->
+                <div> 
+                    <img class="check-icon" src="images/icon-check.png">
+                    <p>Never worry about overpaying for your energy again. </p>
+                    <img class="check-icon" src="images/icon-check.png">
+                    <p>We will only switch you to energy companies that we trust and will treat 
+                        you right. </p>
+                    <img class="check-icon" src="images/icon-check.png">
+                    <p>We track the markets daily and know where the savings are. </p>
+                </div>
+                <!-- ----- -->
+            </div>
+            <div class="image-section">
+                <img class="image image-a4" src="images/image-a4.png">
+            </div>
+        </article>
+        <article class="article flex article-5">
+            <div class="text-section">
+                <p class="pre-h2">Optimisation for</p>
+                <h2 class="headline h2">Marketers</h2>
+                <p>Few would argue that, despite the advancements of feminism over the past three 
+                    decades, women still face a double standard when it comes to their behavior. </p>
+                <h4 class="headline h4">Accessory makers</h4>
+                <p>While most people enjoy casino gambling, sports betting, lottery and bingo 
+                    playing for the fun</p>
+                <h4 class="headline h4">Alterationists</h4>
+                <p>If you are looking for a new way to promote your business that won’t cost you 
+                    more money, </p>
+                <h4 class="headline h4">Custom Design designers</h4>
+                <p>If you are looking for a new way to promote your business that won’t cost you 
+                    more money. </p>
+            </div>
+            <div class="image-section">
+                <img class="image image-a5" src="images/image-a5.png">
+            </div>
         </article>
 
     </main>
@@ -66,7 +147,7 @@
 
     <footer class="footer">
         <div class="logo-div footer-logo">
-            <img class="logo" src="images/Logo.svg">
+            <img class="logo" src="images/Logo.png">
         </div>
         <nav>
             <ul>
@@ -81,7 +162,12 @@
             </ul>
         </nav>
         <div class="footer-signup-div">
-            
+            <div>
+
+            </div>
+            <div class="button orange-button">
+                <p class="button-p"></p>
+            </div>
         </div>
 
     </footer>

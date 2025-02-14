@@ -1,0 +1,124 @@
+.body {
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+p {
+    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #544837;
+
+}
+
+.h1 {
+    font-size: 44px;
+}
+
+.h2 {
+    font-size: 36px;
+}
+
+.a1-p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.button {
+    padding: 1px;
+
+}
+
+.white-button {
+    border-width: 1px;
+    border-color: #BCD0E5;
+    .button-p {
+        color: #173A56;
+    }
+}
+
+.orange-button {
+    background-color: #FF9900;
+    .button-p {
+        color: #FFFFFF;
+    }
+}
+
+.button-p {
+    font-weight: bold;
+}
+
+.headline {
+    color: #2F281E;
+}
+
+.flex {
+    display: flex;
+}
+
+.article {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text-section {
+    max-width: 486px;
+}
+
+.article-1 {
+    flex: row wrap;
+}
+
+.article-2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/*
+.h2-a2-div {
+    width: ;
+}*/
+
+.h2-a2 {
+    text-align: center;
+    max-width: 540px;
+}
+
+.a2-section-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.a2-section {
+    max-width: 240px;
+}
+
+.a2-button-section {
+    flex-grow: 1;
+}
+
+.article-3 {
+    flex: row wrap;
+}
+
+.article-4 {
+    flex-direction: row-reverse;
+}
+
+.article-5 {
+    flex: row wrap;
+}
+
