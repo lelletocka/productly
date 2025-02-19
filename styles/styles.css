@@ -1,21 +1,151 @@
 .body {
     background-color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding: 20px;
 }
 
 .container {
     max-width: 1110px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    gap: 80px;
 }
 
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+
 p {
-    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: #544837;
+    line-height: 26px;
+}
 
+.header {
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 60px;
+    width: 100%;
+    gap: 20px;
+    padding: 5px 0 5px 0;
+    position: sticky;
+    top: 0px;
+}
+
+.header-logo {
+    justify-self: flex-start;
+    flex-grow: 1;
+}
+
+.navbar {
+    list-style-type: none;
+    gap: 10px;
+}
+
+.header-nav {
+    gap: 20px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #544837;
+}
+
+a:hover {
+    transform: scale(1.05);
+} /* Why does this work on the first for links (not the navbar-links) but not the last ones? */
+
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-li {
+    font-size: 14px;
+}
+
+.button {
+    padding: 1px 25px 1px 25px;
+    width: fit-content;
+    border-radius: 4px;  
+}
+
+.button-p {
+    font-weight: bold;
+}
+
+
+.white-button {
+    background-color: #FFFFFF;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #BCD0E5;
+    .button-p {
+        color: #173A56;
+    }
+}
+/* Why is my white header-button behaving differently? When adding a solid border 
+the white button's height increased, and when adding a max-height to the .nav-button class 
+the text jumped down and the two buttons in the header suddenly are not aligned anymore. 
+I tried problem solving, but have no more time for solving it. */
+
+
+.orange-button {
+    background-color: #FF9900;
+    .button-p {
+        color: #FFFFFF;
+    }
+}
+
+.nav-button {
+    padding: 0 15px 0 15px;
+    /*margin: 10px;*/
+    height: 46px;
+    .button-p {
+        padding: 10px;
+    }
+}
+
+.color-orange {
+    color: #FF9900;    
+}
+
+
+/* ----------MAIN---------- */
+
+.article {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0 60px 0;
+}
+
+.headline {
+    color: #2F281E;
+    font-weight: 700;
 }
 
 .h1 {
@@ -26,69 +156,41 @@ p {
     font-size: 36px;
 }
 
-.a1-p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-}
-
-.button {
-    padding: 1px;
-
-}
-
-.white-button {
-    border-width: 1px;
-    border-color: #BCD0E5;
-    .button-p {
-        color: #173A56;
-    }
-}
-
-.orange-button {
-    background-color: #FF9900;
-    .button-p {
-        color: #FFFFFF;
-    }
-}
-
-.button-p {
-    font-weight: bold;
-}
-
-.headline {
-    color: #2F281E;
-}
-
-.flex {
-    display: flex;
-}
-
-.article {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
 .text-section {
     max-width: 486px;
 }
 
 .article-1 {
-    flex: row wrap;
+    margin-top: 0;
+}
+
+.a1-p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.a1-link-container {
+    gap: 20px;
+}
+
+.a1-link {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.a1-link-p {
+    text-decoration: underline;
 }
 
 .article-2 {
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-/*
-.h2-a2-div {
-    width: ;
-}*/
 
 .h2-a2 {
     text-align: center;
@@ -96,8 +198,6 @@ p {
 }
 
 .a2-section-container {
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 }
@@ -106,19 +206,73 @@ p {
     max-width: 240px;
 }
 
-.a2-button-section {
-    flex-grow: 1;
-}
 
-.article-3 {
-    flex: row wrap;
+.pre-h2 {
+    margin-bottom: -20px;
 }
 
 .article-4 {
     flex-direction: row-reverse;
 }
 
-.article-5 {
-    flex: row wrap;
+.a4-section-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.a4-section {
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.a4-section-icon {
+    width: 35px;
+    height: 35px; 
+}
+
+.a4-section-p {
+    max-width: 375px;
+}
+
+/* FOOTER */
+
+.bottom-page-line {
+    height: 1px;
+    width: 100%;
+    background-color: #BCD0E5;
+    border: none;
+    /* margin: 40px auto 40px auto; */
+}
+
+.footer {
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 190px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.footer-logo {
+    align-self: flex-start;
+}
+
+.footer-nav {
+    max-width: 400px;
+    gap: 15px;
+}
+
+.textbox {
+    height: 48px;
+    width: 325px;
+    border-style: solid;
+    border-color: #BCD0E5;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.footer-button {
+    margin-left: 0;
 }
 
